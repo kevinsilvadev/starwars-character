@@ -1,37 +1,28 @@
 .example-form {
-    width: 50%;
-    align-items: center;
-    margin-left: 450px;
-    margin-top: 100px;
+ 
+    margin-left: 150px;
+    margin-top: 95px;
+    
   }
   .example-container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
+    margin-left: 10px;
   }
   .example-full-width {
-    width: 100%;
+    width: 200%;
+    right: 400px;
   }
 
   .example-card {
-    max-width: 400px;
-    margin-left: 700px;
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.281);
+    max-width: 450px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+
   }
   
-  .example-header-image {
-    background-image: url('/frontend/src/assets/d6ff4eced94ad3a0a8b6dee697bc2d1b--tattoo-stars-star-wars-jedi.jpg');
-    background-size: cover;
-  }
-
-
 
 label {
-  font-size: 20px;
-}
-
-
-.history {
-  text-align: center;
+  font-size: 18px;
 }
 
 
@@ -54,9 +45,9 @@ section {
 }
 
 .example-button-row {
-  display: table-cell;
-  width: 400px;
-  left: 275px;
+  margin-bottom: 30px;
+  width: 270px;
+  left: 10px;
   height: 50px;
 }
 
@@ -68,10 +59,4 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 200px;
 }
