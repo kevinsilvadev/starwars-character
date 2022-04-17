@@ -1,41 +1,44 @@
 <form class="example-form" style="color: white;">
-    <mat-form-field class="example-full-width" appearance="fill">
-      <mat-label>Search</mat-label>
-      <input matInput #message maxlength="256" placeholder="Ex. I need help with...">
-      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
-    </mat-form-field>
-    
-    <p></p>
-    <button class="example-button-row" mat-raised-button color="Accent" >
-    
-      Buscar
-      <mat-icon>
-        search
-      </mat-icon>  
-    </button>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Search</mat-label>
+    <input [(ngModel)]="character.name" name="meuI" #model="ngModel" matInput #message maxlength="256" placeholder="Ex. I need help with...">
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+  </mat-form-field>
+
+  <p></p>
+  <button class="example-button-row" mat-raised-button color="Accent" (click)="searchCharacter(character)">
+    Buscar
+    <mat-icon>
+      search
+    </mat-icon>
+  </button>
 
 </form>
 
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Luke SkyWalker</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="assets/luke-star-wars.webp" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <label for="">Planeta: Tatooine</label>
-    <p></p>
-    <label for="">Raça: Humano</label>
-     <p></p>
-     <label for="">Nave: X-WING T-65B</label>
-     <p></p>
-     <label for="" class="history">História</label> 
-     <p></p>
-    <p>
-      Nascido em 19 ABY em Polis Massa, filho do Cavaleiro Jedi caído Anakin Skywalker, que mais tarde se tornou seu inimigo, Darth Vader, o Lorde Negro dos Sith, e da Senadora de Naboo, Padmé Amidala, irmão de Leia Organa Solo. Luke Skywalker foi um revolucionário, foi o maior herói que a Galáxia já conheceu.
-    </p>
-  </mat-card-content>
-</mat-card>
 
 
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title >{{character.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="assets/luke-star-wars.webp" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <label for="model">Planeta: Tatooine</label>
+      <p></p>
+      <label for="">Raça: Humano</label>
+      <p></p>
+      <label for="">Nave: X-WING T-65B</label>
+      <p></p>
+      <label for="" class="history">História</label>
+      <p></p>
+      <p>
+        Nascido em 19 ABY em Polis Massa, filho do Cavaleiro Jedi caído Anakin Skywalker, que mais tarde se tornou seu
+        inimigo, Darth Vader, o Lorde Negro dos Sith, e da Senadora de Naboo, Padmé Amidala, irmão de Leia Organa Solo.
+        Luke Skywalker foi um revolucionário, foi o maior herói que a Galáxia já conheceu.
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

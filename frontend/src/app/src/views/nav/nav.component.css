@@ -2,35 +2,32 @@
  
     margin-left: 150px;
     margin-top: 95px;
-    
   }
   .example-container .mat-form-field + .mat-form-field {
     margin-left: 10px;
   }
   .example-full-width {
-    width: 200%;
+    width: 260%;
     right: 400px;
   }
 
   .example-card {
     max-width: 450px;
-    margin-left: 100px;
-    margin-top: 10px;
+    margin-left: 10px;
     background-color: rgba(0, 0, 0, 0.568);
+    align-items: center;    
 
+  }
+
+  .example-header-image {
+    background-image: url('https://static.dicionariodesimbolos.com.br/upload/59/8b/simbolos-star-wars-3_xl.jpeg');
+    background-size: cover;
   }
   
 
 label {
   font-size: 18px;
 }
-
-
-.example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
-}
-
 
 
 section {
@@ -42,13 +39,13 @@ section {
   font-size: 20px;
   margin-left: 8px;
   min-width: 120px;
+  align-items: center;
 }
 
 .example-button-row {
-  margin-bottom: 30px;
-  width: 270px;
-  left: 10px;
   height: 50px;
+  bottom: 80px;
+  left: 510px;
 }
 
 .example-button-row .mat-button-base {

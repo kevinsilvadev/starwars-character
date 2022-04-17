@@ -4,12 +4,12 @@ import lombok.Data;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
-@Document(collection = "apistarwars")
+@Entity
+@Table(name = "characters")
 public class Character implements Serializable {
 
     @Id
@@ -21,6 +21,9 @@ public class Character implements Serializable {
 
     private String raca;
 
+    private String nave;
+
+    @Column(columnDefinition = "TEXT")
     private  String historia;
 }
 
